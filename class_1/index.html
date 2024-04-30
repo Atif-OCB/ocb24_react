@@ -3,14 +3,29 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React Time!</title>
+    <title>Todo List!</title>
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <div>
-      <nav>
-        
-      </nav>
-    </div>
+    <form class="todo-create">
+      <input type="text" placeholder="Enter your new todo!" />
+      <button>Add</button>
+    </form>
+    <ul class="todo-list">
+      <li class="todo-item">
+        <input type="checkbox" name="row-1" id="row-1" />
+        <label for="row-1">Todo 1</label>
+        <button data-variant="danger">Delete</button>
+      </li>
+      <li class="todo-item">
+        <input type="checkbox" />
+        <span>Todo 2</span>
+        <button data-variant="danger">Delete</button>
+      </li>
+      <li class="todo-item">
+        <input type="checkbox" />
+        <span>Todo 3</span>
+        <button data-variant="danger">Delete</button>
+      </li>
   </body>
 </html>
